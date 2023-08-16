@@ -1,0 +1,44 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+
+[[mods]] #mandatory
+# The modid of the mod
+modId="fieryfoes" #mandatory
+
+version="${file.jarVersion}" #mandatory
+ # A display name for the mod
+displayName="Fiery Foes" #mandatory
+
+logoFile="examplemod.png" #optional
+
+credits="Obviously the mobs are his but credits go to Frog Niche" #optional
+
+authors="TorTuLo, Frog Niche" #optional
+
+description='''
+The Fiery Foes is a mod that implement all mobs, animals, items, and structures to your world.
+'''
+
+[[dependencies.fieryfoes]] #optional
+
+    modId="forge" #mandatory
+
+    mandatory=true #mandatory
+
+    versionRange="[40,)" #mandatory
+
+    ordering="NONE"
+
+    side="BOTH"
+# Here's another dependency
+[[dependencies.fieryfoes]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
